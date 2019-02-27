@@ -49,8 +49,29 @@
     background-color: #8064A2 !important;
 }
 
-.flex-container {
+.flex-container-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.flex-container-vertical {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+.responsive-image-main {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
+.responsive-image-speakers {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+}
+.equal {
+  display: flex;
+  flex-wrap: wrap;
 }

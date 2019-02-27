@@ -29,6 +29,7 @@
 	            <li><a href="#schedule" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Schedule</a></li>
 	            <li><a href="#sponsors" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Sponsors</a></li>
 	            <li><a href="#attend" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Attend</a></li>
+	            <li><a href="#team" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Team</a></li>
 	            <li><a href="#contact" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Contact</a></li>
 	         </ul>
         </div>
@@ -68,19 +69,107 @@
 	<div id="home" class="container tab-pane fade in active">
 	    <p style="color:#0000ad; font-size:46px; margin-top:30px;">Schedule</p>
 	    <div class="row">
-	        <div class="col-md-4">
-	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>        
-	        </div>
-	        <div class="col-md-4"> 
-	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-	        </div>
-	        <div class="col-md-4"> 
-	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
-	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p> 
+	        <div class="col-xs-12" style="background-color:#feeade; padding:0">
+	        	<ul class="nav nav-pills flex-container-horizontal">
+				    <li class="active" style="flex-grow:1"><a data-toggle="pill" href="#day1">Day 1</a></li>
+				    <li style="flex-grow:1"><a data-toggle="pill" href="#day2">Day 2</a></li>
+			  	</ul>
 	        </div>
 	    </div>
+	    <div class="tab-content">
+		    <div id="day1" class="tab-pane fade in active">
+		    	<div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">9:15 - 9:45 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Registrations</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">9:45 - 10:15 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Inauguration</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">10:15 - 10:30 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Keynote Address</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">10:30 - 10:50 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Tea Break</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">10:50 - 11:50 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Panel Discussion</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">11:50 AM - 12:10 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Talk 1</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">12:10 - 12:20 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Story Building</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">12:20 - 12:40 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Talk 2</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">12:40 - 1:00 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Talk 3</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">1:00 - 1:50 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Lunch</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">1:50 - 4:00 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Compile-Build-Run Round1</div>
+			    </div>
+		    </div>
+		    <div id="day2" class="tab-pane fade">
+		    	<div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">10:00 - 10:30 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Keynote Address</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">10:30 - 10:40 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Tea Break</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">10:40-11:40 AM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Panel Discussion</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">11:40 AM - 12:00 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Talk 1</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">12:00 - 12:10 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Spot Presentation</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">12:10 - 12:30 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Talk 2</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">12:30 - 01:00 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Lunch</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">01:00 - 01:45 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Speed Mentoring</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">01:45 - 02:30 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Compile-Build-Run Round2</div>
+			    </div>
+			    <div class="row alternate">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">02:30 - 03:00 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Ace Your Career</div>
+			    </div>
+			    <div class="row">
+			    	<div class="col-xs-6 scheduleLeftItems" style="color:#0000ad;">3:00 - 4:00 PM</div>
+			    	<div class="col-xs-6 scheduleRightItems" style="color:#646364;">Prize Distribution & Closing Ceremony</div>
+			    </div>
+		    </div>
+		</div>
 	</div>
 	<div id="homee" class="container tab-pane fade">
 	    <h3>Fixed Navbar</h3>
@@ -104,8 +193,7 @@
 	    <div class="row">
 	        <div class="col-md-1"></div>
 	        <div class="col-md-7"> 
-	            <!-- <iframe frameborder="0" style="border:0; height:60vh; width:100%;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJh3ytqOuUyzsRxXxvVe1Rj7c&key=AIzaSyAJohKkPcnIWit2rXJ-_FygrXWIJByMdto" allowfullscreen></iframe> -->
-	            <iframe frameborder="0" style="border:0; height:60vh; width:100%;" src="https://www.google.com/" allowfullscreen></iframe>
+	            <iframe frameborder="0" style="border:0; height:60vh; width:100%;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJh3ytqOuUyzsRxXxvVe1Rj7c&key=AIzaSyAJohKkPcnIWit2rXJ-_FygrXWIJByMdto" allowfullscreen></iframe>
 	        </div>
 	        <div class="col-md-3">
 	        	<p>Chaitanya Bharathi Institute of Technology, Gandipet</p>

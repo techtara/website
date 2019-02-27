@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TechTara.2019</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="height:100%">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="#" class="navbar-left"><img src="images/logo(blue)-text.png" style="height:50px; margin:8px"></a>
+            <button id="menu" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarSupportedContent" onmouseover="menuFocus(true)" onfocus="menuFocus(true)" onmouseout="menuFocus(false)" onblur="menuFocus(false)" style="margin-top:16px;">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>  
+	      	</button>
+        </div>
+		
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	        <ul id="navbar-items" class="nav navbar-nav navbar-right" style="margin-top:8px">
+	            <li><a href="#home" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;" class="activeItem">Home</a></li>
+	            <li><a href="#about" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">About</a></li>
+	            <li><a href="#speakers" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Speakers</a></li>
+	            <li><a href="#schedule" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Schedule</a></li>
+	            <li><a href="#sponsors" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Sponsors</a></li>
+	            <li><a href="#attend" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Attend</a></li>
+	            <li><a href="#contact" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Contact</a></li>
+	         </ul>
+        </div>
+    </div>
+</nav>
+    
+<div class="tab-content" style="margin-top:66px; color:#646364">
+	<div id="homee" class="container tab-pane fade">
+	    <h3>Fixed Navbar</h3>
+	    <div class="row">
+	        <div class="col-md-4">
+	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>        
+	        </div>
+	        <div class="col-md-4"> 
+	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+	        </div>
+	        <div class="col-md-4"> 
+	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p>
+	            <p>A fixed navigation bar stays visible in a fixed position (top or bottom) independent of the page scroll.</p> 
+	        </div>
+	    </div>
+	</div>
+	<div id="attend" class="container tab-pane fade">
+	    <p style="color:#0000ad; font-size:46px; margin-top:50px;">Attend</p>
+	    <div class="row">
+	        <div class="col-md-1"></div>
+	        <div class="col-md-7"> 
+	            <!-- <iframe frameborder="0" style="border:0; height:60vh; width:100%;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJh3ytqOuUyzsRxXxvVe1Rj7c&key=AIzaSyAJohKkPcnIWit2rXJ-_FygrXWIJByMdto" allowfullscreen></iframe> -->
+	            <iframe frameborder="0" style="border:0; height:60vh; width:100%;" src="https://www.google.com/" allowfullscreen></iframe>
+	        </div>
+	        <div class="col-md-3">
+	        	<p>Chaitanya Bharathi Institute of Technology, Gandipet</p>
+	        	<p>Ticket: INR 100/-</p>
+	        	<a href="#" class="btn btn-primary" role="button">Register</a>
+	        </div>
+	        <div class="col-md-1"></div>
+	    </div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	function selectItem(event) {
+		let allItems = document.getElementById("navbar-items").children
+		for(let index=0; index<allItems.length; index++) {
+			let item = allItems[index].children[0]
+			if(item.classList !== undefined) {
+				item.classList.remove("activeItem")
+			}
+		}
+
+		let item = event.target
+		item.classList.add("activeItem")
+	}
+	function menuFocus(toggle) {
+		let item = document.getElementById('menu')
+		if(toggle === true) {
+			item.style.backgroundColor = "#0000ad"
+			item.children[0].style.backgroundColor = "#ffffff"
+			item.children[1].style.backgroundColor = "#ffffff"
+			item.children[2].style.backgroundColor = "#ffffff"
+		}
+		else {
+			item.style.backgroundColor = "#feeade"
+			item.children[0].style.backgroundColor = "#646364"
+			item.children[1].style.backgroundColor = "#646364"
+			item.children[2].style.backgroundColor = "#646364"
+		}
+	}
+</script>
+</html>

@@ -1,0 +1,56 @@
+.navbar-default {
+	background-color: #feeade;
+	border-color: #feeade;
+}
+.navbar-default .navbar-text {
+	color: #646364;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #646364;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #0000ad;
+}
+.activeItem {
+    color: #0000ad;
+    border-bottom: 5px solid #0000ad;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	color: #ffffff;
+	background-color: #0000ad;
+}
+.navbar-default .navbar-toggle {
+	border-color: #feeade;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #0000ad;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #646364;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+	border-color: #feeade;
+}
+.navbar-default .navbar-link {
+	color: #646364;
+}
+.navbar-default .navbar-link:hover {
+	color: #ffffff;
+}
+
+.btn-primary, .btn-primary:active, .btn-primary:visited {
+    background-color: #0000ad !important;
+}
+.btn-primary:hover {
+    background-color: #8064A2 !important;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

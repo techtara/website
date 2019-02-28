@@ -15,6 +15,14 @@
     color: #0000ad;
     border-bottom: 5px solid #0000ad;
 }
+.navbar-default .navbar-nav > .active{
+    background: #feeade;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background: #feeade;
+}
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -46,7 +54,9 @@
     background-color: #0000ad !important;
 }
 .btn-primary:hover {
-    background-color: #8064A2 !important;
+    font-weight: 600;
+    color: #0000ad;
+    background-color: #ffffff !important;
 }
 
 .nav-pills > li > a {
@@ -106,6 +116,46 @@
     justify-content: center;
     align-items: center;
 }
-.alternate {
+.alternate > .scheduleLeftItems,
+.alternate > .scheduleRightItems {
     background-color: #f9f9f9;
+}
+
+.round {
+    border-radius: 50%;
+}
+.teamMemName {
+    color: #0000ad; 
+    font-size: 20px; 
+    margin: 0;
+}
+
+#facebook > a {
+    color: #646364
+}
+#facebook:hover {
+    color: #0000ad;
+}
+#facebook > a:hover {
+    color: #0000ad;
+    text-decoration: none;
+}
+
+#mail > a {
+    color: #646364
+}
+#mail:hover {
+    color: #0000ad;
+}
+#mail > a:hover {
+    color: #0000ad;
+    text-decoration: none;
+}
+
+#address:hover {
+    color: #0000ad;
+}
+
+#phone:hover {
+    color: #0000ad;
 }

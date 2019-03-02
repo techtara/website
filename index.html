@@ -13,9 +13,9 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
 </head>
 <body style="height:100%; font-family:'Abel';" onload="adjustDivider(undefined)" onresize="adjustDivider(undefined)">
-<p id="url" style="display:none">file:///G:/Academic/TechTara2019/website/index.html</p>
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -57,7 +57,7 @@
 	    	<div class="flex-container-horizontal" style="width:300px;">
 	    		<a href="https://www.bit.ly/techtara" target="_blank" class="btn btn-primary" role="button">Register</a>
 	    		<a></a>
-	    		<a href="#" onclick="copyLink()" class="btn btn-primary" role="button">Share</a>
+	    		<a href="#" class="btn btn-primary copyButton" role="button" data-clipboard-text="techtara.org">Share</a>
 	    	</div>
 	    </div>
 	</div>
@@ -75,21 +75,57 @@
 	    	</div>
 	    	<div class="col-md-1"></div>
 	    </div>
-	    <div class="row">
-	    	<div class="col-xs-12 flex-container-vertical" style="text-align:center; font-size:20px; height:55vh">Stay tuned for updates...</div>
-	    </div>
-	    <!-- <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
 	    	<div class="col-md-1"></div>
 	    	<div class="col-md-5">
-	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Prathyusha Parakala</p>
-	    		<p style="text-align:justify; font-size:16px;">Michelle LaVaughn Robinson Obama (born January 17, 1964) is an American writer, lawyer, and university administrator who was First Lady of the United States from 2009 to 2017. She is married to the 44th U.S. President, Barack Obama, and was the first African-American First Lady. <br/>
-	    		Raised on the South Side of Chicago, Illinois, Obama is a graduate of Princeton University and Harvard Law School. In her early legal career, she worked at the law firm Sidley Austin, where she met Barack Obama. She subsequently worked in non-profits and as the Associate Dean of Student Services at the University of Chicago and the Vice President for Community and External Affairs of the University of Chicago Medical Center. Michelle married Barack in 1992 and they have two daughters.</p>
+	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Dr.Priti Chandra</p>
+	    		<p style="text-align:justify; font-size:16px;">As the Head of Cyber Security Egovernance & Strategic Systems at ASL, Dr.Priti Chandra has been serving DRDO for the last  25 years. She is a Computer Science Post Graduate and was awarded Doctorate by Central University, Hyderabad for her research in AI.<br/><br/>
+	    		Her vast experience on DRDO systems for armed forces includes Integrated Security Surveillance systems, camouflaging for the strategic missile program. She has published 25 research papers in International Journals and conferences. She is a regular reviewer in International Journals and Conferences.</p>
+	    	</div>
+	    	<div class="col-md-5 flex-container-vertical">
+	    		<img class="responsive-image-speakers" src="images/chandra.jpeg"/>
+	    	</div>
+	    	<div class="col-md-1"></div>
+	    </div>
+	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    	<div class="col-md-1"></div>
+	    	<div class="col-md-5 flex-container-vertical">
+	    		<img class="responsive-image-speakers" src="images/swecha.jpeg"/>
+	    	</div>
+	    	<div class="col-md-5">
+	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Pravallika Achythuni</p>
+	    		<p style="text-align:justify; font-size:16px;">Pravallika Achyuthuni is the Vice President of Swecha , a non-profit organisation which works to take forward free software and its ideological implications to all corners of our country from the developed domains to the underprivileged.  She has been associated with the organisation for 10 years now.<br/><br/>
+	    		She has done her post graduation in  Business Analytics from Great Lakes Institute of Management. She has 5+ years of experience as a Main Frame developer and is currently working at Verizon India.</p>
+	    	</div>
+	    	<div class="col-md-1"></div>
+	    </div>	
+	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    	<div class="col-md-1"></div>
+	    	<div class="col-md-5">
+	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Pratyusha Parakala</p>
+	    		<p style="text-align:justify; font-size:16px;">A software professional turned RJ, Pratyusha Parakala is the only woman from AP and Telangana to go on an expedition to Antarctica to study about climatic change and sustainable living. She was the Climate Force Antarctica Ambassador in 2018. <br/><br/> 
+	    		She received state-level Vishista Puraskaram Award, 2018 from the Government of Telangana. She is also an expert in applying academic background and technical skills to create a positive drift in the organisation. She even launched a new radio station, Mirchi Love in Hyderabad.</p>
 	    	</div>
 	    	<div class="col-md-5 flex-container-vertical">
 	    		<img class="responsive-image-speakers" src="images/parakala.jpg"/>
 	    	</div>
 	    	<div class="col-md-1"></div>
-	    </div>	 -->
+	    </div>	
+	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    	<div class="col-md-1"></div>
+	    	<div class="col-md-5 flex-container-vertical">
+	    		<img class="responsive-image-speakers" src="images/tayyaba.jpeg"/>
+	    	</div>
+	    	<div class="col-md-5">
+	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Aziz Tayyaba</p>
+	    		<p style="text-align:justify; font-size:16px;">Aziz Unnisa Tayyaba, former Indian Airforce officer,has been a “hard-core" air warrior so much so that her parasailing exploits were even listed in the Limca Book of Records. In 2009, after 16 years in the air force, she completed her commission and was forced to retire.<br/><br/>
+				She went to the Indian Institute of Management,  Ahmedabad, completed the six-month business management course for defence personnel and joined the human resources department of the Shapoorji Pallonji Group in Hyderabad. She tries to use her experience to add new dimensions to her current workplace.</p>
+	    	</div>
+	    	<div class="col-md-1"></div>
+	    </div>
+	    <div class="row">
+	    	<div class="col-xs-12 flex-container-vertical" style="text-align:center; font-size:20px; height:55vh">Stay tuned for more updates...</div>
+	    </div>
 	</div>
 	<div id="schedule" class="container tab-pane fade">
 	    <p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px; margin-bottom:30px">Schedule</p>
@@ -132,25 +168,25 @@
 			    <div class="row">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">10:45 AM - 12:15 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion on <span style="color:#0000ad">&nbsp;Women in Technology</span></div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:15 - 12:35 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk 1</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk #1</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:35 - 12:45 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Story Building</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Interactive activity: Story Building</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:45 - 01:05 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk 2</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk #2</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row">
@@ -176,7 +212,7 @@
 			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">10:30 AM - 12:00 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion on <span style="color:#0000ad">&nbsp;Women in Society</span></div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row">
@@ -188,19 +224,19 @@
 			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:10 - 12:30 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk 1</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk #3</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:30 - 12:40 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Spot Presentation</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Interactive activity: Spot Presentation</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:40 - 01:00 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk 2</div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk #4</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row">
@@ -367,7 +403,7 @@
 	        	<div class="flex-container-horizontal" style="padding-top:8px;">
 	        		<a href="https://www.bit.ly/techtara" target="_blank" class="btn btn-primary" role="button">Register</a>
 	        		<div style="width:40px;"></div>
-	        		<a href="#" onclick="copyLink()" class="btn btn-primary" role="button">Share</a>
+	        		<a href="#" onclick="copyLink()" class="btn btn-primary copyButton" data-clipboard-text="techtara.org" role="button">Share</a>
 	        	</div>
 	        </div>
 	        <div class="col-md-1"></div>
@@ -376,9 +412,11 @@
 </div>
 </body>
 <script type="text/javascript">
+
 	$('.navbar-collapse a').click(function(){
 	    $(".navbar-collapse").collapse('hide');
 	});	
+
 	function selectItem(event) {
 		let allItems = document.getElementById("navbar-items").children
 		for(let index=0; index<allItems.length; index++) {
@@ -391,6 +429,7 @@
 		let item = event.target
 		item.classList.add("activeItem")
 	}
+
 	function menuFocus(toggle) {
 		let item = document.getElementById('menu')
 		if(toggle === true) {
@@ -406,32 +445,27 @@
 			item.children[2].style.backgroundColor = "#646364"
 		}
 	}
+
 	function adjustDivider(event) {
 		if(event !== undefined)
 			selectItem(event)
 		let width = $('#about').width()
 		if(width >= 760) {
-			console.log("big: "+width)
 			document.getElementById('contactInfo').style.height = $('#verticalDivider').height+"px"
 			document.getElementById('contactInfo').style.paddingLeft = "80px"
 			document.getElementById('horizontalDivider').style.display = "none"
 			document.getElementById('verticalDivider').style.borderRight = "1px solid #0000ad"
 		}
 		else {
-			console.log("small: " +width)
 			document.getElementById('contactInfo').style.height = "250px"
 			document.getElementById('contactInfo').style.paddingLeft = "30px"
 			document.getElementById('horizontalDivider').style.display = "block"
 			document.getElementById('verticalDivider').style.border = "0px"
 		}
 	}
-	function copyLink() {
-		let url = "file:///G:/Academic/TechTara2019/website/index.html#"
-  		navigator.clipboard.writeText(url).then(function() {
-  			alert("Link copied!")
-		}, function() {
-  			alert("Link could not be copied :(")		
-  		})
-  	}
+
+    (function(){
+	    new Clipboard('.copyButton');
+	})();
 </script>
 </html>

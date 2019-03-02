@@ -159,3 +159,7 @@
 #phone:hover {
     color: #0000ad;
 }
+
+#comp-mail:hover {
+    font-weight: 600;
+}

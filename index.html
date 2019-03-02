@@ -33,7 +33,7 @@
 	            <li><a href="#about" data-toggle="tab" onclick="adjustDivider(event);" style="display:inline-block;">About</a></li>
 	            <li><a href="#speakers" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Speakers</a></li>
 	            <li><a href="#schedule" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Schedule</a></li>
-	            <li><a href="#schedule" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Competitions</a></li>
+	            <li><a href="#competitions" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Competitions</a></li>
 	            <!-- <li><a href="#sponsors" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Sponsors</a></li> -->
 	            <li><a href="#attend" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Attend</a></li>
 	            <li><a href="#team" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Team</a></li>
@@ -60,6 +60,42 @@
 	    		<a></a>
 	    		<a href="#" class="btn btn-primary copyButton" role="button" data-clipboard-text="techtara.org">Share</a>
 	    	</div>
+	    </div>
+	</div>
+	<div id="about" class="container tab-pane fade flex-container-vertical">
+	    <div class="row" style="margin-top:50px">
+	        <div class="col-md-7" id="verticalDivider" style="border-right:1px solid #0000ad; padding-left:30px; padding-right:50px;">
+	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px;">About</p>
+	        	<p style="text-align:justify; font-size:14px;">From the earliest days of computer science, women have made crucial contributions to its progress. As our world today moves towards a brighter and more equal future, it is time we sit up and take notice of these contributions. Organizations around the globe are pushing for more recognition for women in technology, and young girls are being encouraged to take up technology as a career choice. In keeping with this spirit, the Department of Computer Science & Engineering, Chaitanya Bharathi Institute of Technology is proud to host its first ever event focused on the role of women in technology on 6th and 7th March. Organized with the theme “Celebrate, Inspire, Network”, TechTara will feature a diverse and eminent panel of speakers, who will deliver talks and participate in panel discussions. Other events will also be conducted to help students identify and display their skills.</p>
+	        	<hr id="horizontalDivider" style="border-color:#0000ad; margin-top:50px; display:none;"/>
+	        </div>
+	        <div class="col-md-5 flex-container-vertical" id="contactInfo" style="align-items:flex-start; padding-left:80px"> 
+	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:24px;">Contact</p>
+	        	<div>
+		        	<div id="facebook" class="flex-container-horizontal" style="justify-content:flex-start;">
+		        		<i class="fa fa-facebook-official" style="margin:6px; font-size:24px"></i>
+		        		<a href="https://www.facebook.com/TechTaraCBIT/" target="_blank">TechTara CBIT</a>
+		        	</div>
+		        	<div id="mail" class="flex-container-horizontal" style="justify-content:flex-start;">
+		        		<i class="material-icons" style="margin:6px">mail</i>
+		        		<a href="mailto:techtaracbit@gmail.com" target="_blank">techtaracbit@gmail.com</a>
+		        	</div>
+		        	<div id="address" class="flex-container-horizontal" style="justify-content:flex-start;">
+		        		<i class="material-icons" style="margin:6px">business</i>
+		        		<p>Chaitanya Bharathi Institute of Technology (A)<br/>
+		        			Gandipet, Hyderabad, Telangana 500075
+		        		</p>
+		        	</div>
+		        	<div id="phone" class="flex-container-horizontal" style="justify-content:flex-start; align-items:flex-start;">
+		        		<i class="material-icons" style="margin:6px">call</i>
+		        		<div class="flex-container-vertical" class="justify-content:flex-start">
+			        		<p>Keerthi: 8074579249</p>
+			        		<p>Charita: 7036093933</p>
+			        		<p>Ankitha: 9502320835</p>
+			        	</div>
+		        	</div>
+	        	</div>
+	        </div>
 	    </div>
 	</div>
 	<div id="speakers" class="container tab-pane fade">
@@ -273,45 +309,26 @@
 		    </div>
 		</div>
 	</div>
-	<div id="sponsors" style="font-size:12px" class="container tab-pane fade">
-	    <p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px; margin-bottom:30px">Sponsors</p>
-	    <div class="row">
-	    	<div class="col-xs-12 flex-container-vertical" style="text-align:center; font-size:20px; height:55vh">TBD</div>
-	    </div>
-	    <!-- <div class="row">
-	        <div class="col-sm-4 flex-container-vertical">
-	        	<img class="round" src="images/girl.png" style="width:120px"/>
-	        	<p class="teamMemName">Jane Smith</p>
-	        	<p>Lorem, Ipsum Dolor</p>
+	<div id="competitions" class="container tab-pane fade flex-container-vertical">
+	    <div class="row" style="margin-top:50px">
+	        <div class="col-md-7" id="verticalCompDivider" style="border-right:1px solid #0000ad; padding-left:30px; padding-right:50px;">
+	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px;">Essay Writing</p><br/>
+	        	<p style="font-size:16px">Topics:</p>
+	        	<ul>
+	        		<li style="text-align:justify; font-size:14px;">Challenges women face in the workplace today and how they can be overcome (eg workplace harassment exposed by #MeToo)</li>
+	        		<li style="text-align:justify; font-size:14px;">Who is a woman you look up to and what qualities do you admire in her?</li>
+	        	</ul>
+	        	<br/>
+	        	<p style="font-size:16px; margin-bottom:0">Word Limit: 500</p>
+	        	<p style="font-size:16px; margin-bottom:0">Last Date: March 05, 2019</p>
+	        	<p style="font-size:16px">Send your submissions to <a href="mailto:techtaracbit@gmail.com" id="comp-mail" target="_blank" style="color:#0000ad; text-decoration:none;">techtaracbit@gmail.com</a></p>
+	        	<hr id="horizontalCompDivider" style="border-color:#0000ad; margin-top:50px; display:none;"/>
 	        </div>
-	        <div class="col-sm-4 flex-container-vertical">
-	        	<img class="round" src="images/girl.png" style="width:120px"/>
-	        	<p class="teamMemName">Jane Smith</p>
-	        	<p>Lorem, Ipsum Dolor</p>
-	        </div>
-	        <div class="col-sm-4 flex-container-vertical">
-	        	<img class="round" src="images/girl.png" style="width:120px"/>
-	        	<p class="teamMemName">Jane Smith</p>
-	        	<p>Lorem, Ipsum Dolor</p>
+	        <div class="col-md-5 flex-container-vertical" id="coding" style="align-items:flex-start; padding-left:80px"> 
+	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px;">Coding Contest</p>
+	        	<p style="text-align:justify; font-size:14px;">Coming soon! Stay tuned</p>
 	        </div>
 	    </div>
-	    <div class="row">
-	        <div class="col-sm-4 flex-container-vertical">
-	        	<img class="round" src="images/girl.png" style="width:120px"/>
-	        	<p class="teamMemName">Jane Smith</p>
-	        	<p>Lorem, Ipsum Dolor</p>
-	        </div>
-	        <div class="col-sm-4 flex-container-vertical">
-	        	<img class="round" src="images/girl.png" style="width:120px"/>
-	        	<p class="teamMemName">Jane Smith</p>
-	        	<p>Lorem, Ipsum Dolor</p>
-	        </div>
-	        <div class="col-sm-4 flex-container-vertical">
-	        	<img class="round" src="images/girl.png" style="width:120px"/>
-	        	<p class="teamMemName">Jane Smith</p>
-	        	<p>Lorem, Ipsum Dolor</p>
-	        </div>
-	    </div> -->
 	</div>
 	<div id="team" style="font-size:12px" class="container tab-pane fade">
 	    <p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px; margin-bottom:30px;">Team</p>
@@ -347,42 +364,6 @@
 	        	<img class="round" src="images/sreeshma.jpeg" style="width:120px"/>
 	        	<p class="teamMemName">Sai Sreeshma</p>
 	        	<!-- <p>Lorem, Ipsum Dolor</p> -->
-	        </div>
-	    </div>
-	</div>
-	<div id="about" class="container tab-pane fade flex-container-vertical">
-	    <div class="row" style="margin-top:50px">
-	        <div class="col-md-7" id="verticalDivider" style="border-right:1px solid #0000ad; padding-left:30px; padding-right:50px;">
-	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px;">About</p>
-	        	<p style="text-align:justify; font-size:14px;">From the earliest days of computer science, women have made crucial contributions to its progress. As our world today moves towards a brighter and more equal future, it is time we sit up and take notice of these contributions. Organizations around the globe are pushing for more recognition for women in technology, and young girls are being encouraged to take up technology as a career choice. In keeping with this spirit, the Department of Computer Science & Engineering, Chaitanya Bharathi Institute of Technology is proud to host its first ever event focused on the role of women in technology on 6th and 7th March. Organized with the theme “Celebrate, Inspire, Network”, TechTara will feature a diverse and eminent panel of speakers, who will deliver talks and participate in panel discussions. Other events will also be conducted to help students identify and display their skills.</p>
-	        	<hr id="horizontalDivider" style="border-color:#0000ad; margin-top:50px; display:none;"/>
-	        </div>
-	        <div class="col-md-5 flex-container-vertical" id="contactInfo" style="align-items:flex-start; padding-left:80px"> 
-	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:24px;">Contact</p>
-	        	<div>
-		        	<div id="facebook" class="flex-container-horizontal" style="justify-content:flex-start;">
-		        		<i class="fa fa-facebook-official" style="margin:6px; font-size:24px"></i>
-		        		<a href="https://www.facebook.com/TechTaraCBIT/" target="_blank">TechTara CBIT</a>
-		        	</div>
-		        	<div id="mail" class="flex-container-horizontal" style="justify-content:flex-start;">
-		        		<i class="material-icons" style="margin:6px">mail</i>
-		        		<a href="mailto:techtaracbit@gmail.com" target="_blank">techtaracbit@gmail.com</a>
-		        	</div>
-		        	<div id="address" class="flex-container-horizontal" style="justify-content:flex-start;">
-		        		<i class="material-icons" style="margin:6px">business</i>
-		        		<p>Chaitanya Bharathi Institute of Technology (A)<br/>
-		        			Gandipet, Hyderabad, Telangana 500075
-		        		</p>
-		        	</div>
-		        	<div id="phone" class="flex-container-horizontal" style="justify-content:flex-start; align-items:flex-start;">
-		        		<i class="material-icons" style="margin:6px">call</i>
-		        		<div class="flex-container-vertical" class="justify-content:flex-start">
-			        		<p>Keerthi: 8074579249</p>
-			        		<p>Charita: 7036093933</p>
-			        		<p>Ankitha: 9502320835</p>
-			        	</div>
-		        	</div>
-	        	</div>
 	        </div>
 	    </div>
 	</div>
@@ -463,28 +444,54 @@
 			document.getElementById('horizontalDivider').style.display = "block"
 			document.getElementById('verticalDivider').style.border = "0px"
 		}
+
+		width = $('#competitions').width()
+		if(width >= 760) {
+			document.getElementById('coding').style.height = $('#verticalCompDivider').height+"px"
+			document.getElementById('coding').style.paddingLeft = "80px"
+			document.getElementById('horizontalCompDivider').style.display = "none"
+			document.getElementById('verticalCompDivider').style.borderRight = "1px solid #0000ad"
+		}
+		else {
+			document.getElementById('coding').style.height = "250px"
+			document.getElementById('coding').style.paddingLeft = "30px"
+			document.getElementById('horizontalCompDivider').style.display = "block"
+			document.getElementById('verticalCompDivider').style.border = "0px"
+		}
 	}
 
 	function adjustSpeakers() {
 		let width = $('#speakers').width()
 		if(width < 760) {
 			let speakers = document.getElementsByClassName('equal')
-			for(let i=1; i<speakers.length; i=i+2) {
+			for(let i=0; i<speakers.length; i=i+1) {
 				let thisSpeaker = "speaker"+(i+1)
-				let secondChild = document.getElementById(thisSpeaker).children[1]
-				let thirdChild = document.getElementById(thisSpeaker).children[2]
-				if(thirdChild.children[0].tagName === "IMG")
-					document.getElementById(thisSpeaker).insertBefore(thirdChild, secondChild);
+				if(i%2 === 1) {
+					let secondChild = document.getElementById(thisSpeaker).children[1]
+					let thirdChild = document.getElementById(thisSpeaker).children[2]
+					if(thirdChild.children[0].tagName === "IMG") {
+						document.getElementById(thisSpeaker).insertBefore(thirdChild, secondChild)
+						document.getElementById(thisSpeaker).children[2].children[0].style.marginTop = "20px"
+					}
+				}
+				else 
+					document.getElementById(thisSpeaker).children[2].children[0].style.marginTop = "20px"
 			}
 		}
 		else {
 			let speakers = document.getElementsByClassName('equal')
-			for(let i=1; i<speakers.length; i=i+2) {
+			for(let i=0; i<speakers.length; i=i+1) {
 				let thisSpeaker = "speaker"+(i+1)
-				let secondChild = document.getElementById(thisSpeaker).children[1]
-				let thirdChild = document.getElementById(thisSpeaker).children[2]
-				if(secondChild.children[0].tagName === "IMG")
-					document.getElementById(thisSpeaker).insertBefore(thirdChild, secondChild);
+				if(i%2 === 1) {
+					let secondChild = document.getElementById(thisSpeaker).children[1]
+					let thirdChild = document.getElementById(thisSpeaker).children[2]
+					if(secondChild.children[0].tagName === "IMG") {
+						document.getElementById(thisSpeaker).insertBefore(thirdChild, secondChild)
+						document.getElementById(thisSpeaker).children[1].children[0].style.marginTop = "0"
+					}
+				}
+				else 
+					document.getElementById(thisSpeaker).children[2].children[0].style.marginTop = "0"
 			}
 		}
 	}

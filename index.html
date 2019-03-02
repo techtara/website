@@ -15,7 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
 </head>
-<body style="height:100%; font-family:'Abel';" onload="adjustDivider(undefined)" onresize="adjustDivider(undefined)">
+<body style="height:100%; font-family:'Abel';" onload="adjustDivider(undefined); adjustSpeakers()" onresize="adjustDivider(undefined); adjustSpeakers()">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -33,6 +33,7 @@
 	            <li><a href="#about" data-toggle="tab" onclick="adjustDivider(event);" style="display:inline-block;">About</a></li>
 	            <li><a href="#speakers" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Speakers</a></li>
 	            <li><a href="#schedule" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Schedule</a></li>
+	            <li><a href="#schedule" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Competitions</a></li>
 	            <!-- <li><a href="#sponsors" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Sponsors</a></li> -->
 	            <li><a href="#attend" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Attend</a></li>
 	            <li><a href="#team" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Team</a></li>
@@ -63,7 +64,7 @@
 	</div>
 	<div id="speakers" class="container tab-pane fade">
 	    <p style="color:#0000ad; font-size:36px; margin-top:30px; font-family:'Bungee'">Speakers</p>
-	    <div class="row equal" style="background-color:#fff; padding-top:10px;">
+	    <div class="row equal" id="speaker1" style="background-color:#fff; padding-top:10px;">
 	    	<div class="col-md-1"></div>
 	    	<div class="col-md-5 flex-container-vertical">
 	    		<img class="responsive-image-speakers" src="images/chansoria.jpg"/>
@@ -75,7 +76,7 @@
 	    	</div>
 	    	<div class="col-md-1"></div>
 	    </div>
-	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    <div class="row equal" id="speaker2" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
 	    	<div class="col-md-1"></div>
 	    	<div class="col-md-5">
 	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Dr.Priti Chandra</p>
@@ -87,7 +88,7 @@
 	    	</div>
 	    	<div class="col-md-1"></div>
 	    </div>
-	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    <div class="row equal" id="speaker3" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
 	    	<div class="col-md-1"></div>
 	    	<div class="col-md-5 flex-container-vertical">
 	    		<img class="responsive-image-speakers" src="images/swecha.jpeg"/>
@@ -99,7 +100,7 @@
 	    	</div>
 	    	<div class="col-md-1"></div>
 	    </div>	
-	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    <div class="row equal" id="speaker4" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
 	    	<div class="col-md-1"></div>
 	    	<div class="col-md-5">
 	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Pratyusha Parakala</p>
@@ -111,7 +112,7 @@
 	    	</div>
 	    	<div class="col-md-1"></div>
 	    </div>	
-	    <div class="row equal" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
+	    <div class="row equal" id="speaker5" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
 	    	<div class="col-md-1"></div>
 	    	<div class="col-md-5 flex-container-vertical">
 	    		<img class="responsive-image-speakers" src="images/tayyaba.jpeg"/>
@@ -165,10 +166,10 @@
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Tea Break</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row">
+			    <div class="row" style="margin-top:8px; margin-bottom:8px;">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">10:45 AM - 12:15 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion on <span style="color:#0000ad">&nbsp;Women in Technology</span></div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion on Women in Technology</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
 			    <div class="row alternate">
@@ -195,7 +196,7 @@
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Lunch</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row">
+			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">1:45 - 4:00 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Compile-Build-Run Round1</div>
@@ -203,67 +204,67 @@
 			    </div>
 		    </div>
 		    <div id="day2" class="tab-pane fade">
-		    	<div class="row">
+		    	<div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">10:00 - 10:30 AM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Keynote Address</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row alternate">
+			    <div class="row" style="margin-top:8px; margin-bottom:8px;">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">10:30 AM - 12:00 PM</div>
-			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion on <span style="color:#0000ad">&nbsp;Women in Society</span></div>
+			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Panel Discussion on Women in Society</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row">
+			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:00 - 12:10 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Tea Break</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row alternate">
+			    <div class="row">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:10 - 12:30 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk #3</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row">
+			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:30 - 12:40 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Interactive activity: Spot Presentation</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row alternate">
+			    <div class="row">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">12:40 - 01:00 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Talk #4</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row">
+			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">01:00 - 01:30 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Lunch</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row alternate">
+			    <div class="row">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">01:30 - 02:15 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Speed Mentoring</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row">
+			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">02:15 - 02:45 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Compile-Build-Run Round2</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row alternate">
+			    <div class="row">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">02:45 - 03:10 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Ace Your Career</div>
 			    	<div class="col-xs-1"></div>
 			    </div>
-			    <div class="row">
+			    <div class="row alternate">
 			    	<div class="col-xs-1"></div>
 			    	<div class="col-xs-5 scheduleLeftItems" style="color:#0000ad;">3:10 - 4:00 PM</div>
 			    	<div class="col-xs-5 scheduleRightItems" style="color:#646364;">Prize Distribution & Closing Ceremony</div>
@@ -461,6 +462,30 @@
 			document.getElementById('contactInfo').style.paddingLeft = "30px"
 			document.getElementById('horizontalDivider').style.display = "block"
 			document.getElementById('verticalDivider').style.border = "0px"
+		}
+	}
+
+	function adjustSpeakers() {
+		let width = $('#speakers').width()
+		if(width < 760) {
+			let speakers = document.getElementsByClassName('equal')
+			for(let i=1; i<speakers.length; i=i+2) {
+				let thisSpeaker = "speaker"+(i+1)
+				let secondChild = document.getElementById(thisSpeaker).children[1]
+				let thirdChild = document.getElementById(thisSpeaker).children[2]
+				if(thirdChild.children[0].tagName === "IMG")
+					document.getElementById(thisSpeaker).insertBefore(thirdChild, secondChild);
+			}
+		}
+		else {
+			let speakers = document.getElementsByClassName('equal')
+			for(let i=1; i<speakers.length; i=i+2) {
+				let thisSpeaker = "speaker"+(i+1)
+				let secondChild = document.getElementById(thisSpeaker).children[1]
+				let thirdChild = document.getElementById(thisSpeaker).children[2]
+				if(secondChild.children[0].tagName === "IMG")
+					document.getElementById(thisSpeaker).insertBefore(thirdChild, secondChild);
+			}
 		}
 	}
 

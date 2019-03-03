@@ -534,9 +534,16 @@
 			}
 		}
 	}
+	(function(){
+	    var clipboard = new Clipboard('.copyButton');
 
-    (function(){
-	    new Clipboard('.copyButton');
+		clipboard.on('success', function(e) {
+			window.alert("Link copied!")
+		});
+
+		clipboard.on('error', function(e) {
+			window.alert("Link could not be copied :(")
+		});
 	})();
 </script>
 </html>

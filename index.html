@@ -34,7 +34,7 @@
 	            <li><a href="#speakers" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Speakers</a></li>
 	            <li><a href="#schedule" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Schedule</a></li>
 	            <li><a href="#competitions" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Competitions</a></li>
-	            <!-- <li><a href="#sponsors" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Sponsors</a></li> -->
+	            <!-- <li><a href="#team" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Sponsors</a></li> -->
 	            <li><a href="#attend" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Attend</a></li>
 	            <li><a href="#team" data-toggle="tab" onclick="selectItem(event)" style="display:inline-block;">Team</a></li>
 	         </ul>
@@ -196,18 +196,6 @@
 	    	</div>
 	    	<div class="col-md-1"></div>
 	    </div>	
-	    <div class="row equal" id="speaker7" style="background-color:#fff; padding-top:70px; padding-bottom:20px">
-	    	<div class="col-md-1"></div>
-	    	<div class="col-md-5 flex-container-vertical">
-	    		<img class="responsive-image-speakers" src="images/jayanthi.jpeg"/>
-	    	</div>
-	    	<div class="col-md-5">
-	    		<p style="font-family:'Bungee'; font-size:24px; color:#0000ad";>Dr. L Jayanthi Reddy</p>
-	    		<p style="text-align:justify; font-size:16px;">Dr. L Jayanthi Reddy is a Gynecologist and Obstetrician presently practicing at JJ Hospital in Kalyan Nagar, Hyderabad. She has completed her MBBS in the year 1995 and specializes in pregnancy care, gynecology problems treatment. <br/><br/>
-				She has an experience of more than two and a half decades in the fields and also offers advice and counseling by conducting diagnosis with regards to reproductive care.</p>
-	    	</div>
-	    	<div class="col-md-1"></div>
-	    </div>
 	    <div class="row">
 	    	<div class="col-xs-12 flex-container-vertical" style="text-align:center; font-size:20px; height:35vh">We also have alumni coming in to mentor the participants!<br/>
 	    	Stay tuned for more updates...
@@ -361,7 +349,7 @@
 	</div>
 	<div id="competitions" class="container tab-pane fade flex-container-vertical">
 	    <div class="row" style="margin-top:50px">
-	        <div class="col-md-7" id="verticalCompDivider" style="border-right:1px solid #0000ad; padding-left:30px; padding-right:50px;">
+	        <div class="col-md-7" id="verticalCompDivider" style="padding-left:30px; padding-right:50px;">
 	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px;">Essay Writing</p><br/>
 	        	<p style="font-size:16px">Topics:</p>
 	        	<ul>
@@ -372,12 +360,6 @@
 	        	<p style="font-size:16px; margin-bottom:0">Word Limit: 500</p>
 	        	<p style="font-size:16px; margin-bottom:0">Last Date: March 05, 2019</p>
 	        	<p style="font-size:16px">Send your submissions to <a href="mailto:techtaracbit@gmail.com" class="comp-mail" target="_blank" style="color:#0000ad; text-decoration:none;">techtaracbit@gmail.com</a></p>
-	        	<hr id="horizontalCompDivider" style="border-color:#0000ad; margin-top:50px; display:none;"/>
-	        </div>
-	        <div class="col-md-5 flex-container-vertical" id="coding" style="align-items:flex-start; padding-left:80px"> 
-	        	<p style="color:#0000ad; font-family:'Bungee'; font-size:36px; margin-top:30px;">Coding Contest</p><br/>
-	        	<p style="text-align:justify; font-size:14px;">Go to <a href="https://bit.ly/taracode2019" class="comp-mail" target="_blank" style="font-size:16px; color:#0000ad; text-decoration:none;">TaraCode</a>!</p>
-	        	<p style="font-size:16px; margin-bottom:0">Ends on March 5, 2019</p>
 	        </div>
 	    </div>
 	</div>
@@ -494,20 +476,6 @@
 			document.getElementById('contactInfo').style.paddingLeft = "30px"
 			document.getElementById('horizontalDivider').style.display = "block"
 			document.getElementById('verticalDivider').style.border = "0px"
-		}
-
-		width = $('#competitions').width()
-		if(width >= 760) {
-			document.getElementById('coding').style.height = $('#verticalCompDivider').height+"px"
-			document.getElementById('coding').style.paddingLeft = "80px"
-			document.getElementById('horizontalCompDivider').style.display = "none"
-			document.getElementById('verticalCompDivider').style.borderRight = "1px solid #0000ad"
-		}
-		else {
-			document.getElementById('coding').style.height = "250px"
-			document.getElementById('coding').style.paddingLeft = "30px"
-			document.getElementById('horizontalCompDivider').style.display = "block"
-			document.getElementById('verticalCompDivider').style.border = "0px"
 		}
 	}
 
